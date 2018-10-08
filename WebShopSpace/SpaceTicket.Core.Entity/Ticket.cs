@@ -2,8 +2,9 @@
 
 namespace SpaceTicket.Core.Entity
 {
-    class SpaceTicket
+  public  class Ticket
     {
+        public int TicketID { get; set; }
         public double TicketPrice { get; set; }
         public DateTime TravelDate { get; set; }
         public DateTime TravelTime { get; set; }

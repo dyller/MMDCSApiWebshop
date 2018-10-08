@@ -4,8 +4,9 @@ using System.Text;
 
 namespace SpaceTicket.Core.Entity
 {
-    class User
+   public class User
     {
+        public int UserId { get; set; }
         public Boolean Admin { get; set; }
         public String Username { get; set; }
         public String Passsword { get; set; }
