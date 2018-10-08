@@ -211,12 +211,6 @@
       "SpaceTicket.Core.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
-<<<<<<< HEAD
-        "dependencies": {
-          "Microsoft.NETCore.App": "2.1.0"
-        },
-=======
->>>>>>> Jacob
         "compile": {
           "bin/placeholder/SpaceTicket.Core.Entity.dll": {}
         },
@@ -228,10 +222,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-<<<<<<< HEAD
-          "Microsoft.NETCore.App": "2.1.0",
-=======
->>>>>>> Jacob
           "SpaceTicket.Core.Entity": "1.0.0"
         },
         "compile": {
@@ -787,5 +777,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\jacob\\Desktop\\study\\MMDCSApiWebshop\\WebShopSpace\\Webshop.Infrastructure\\obj\\Webshop.Infrastructure.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
