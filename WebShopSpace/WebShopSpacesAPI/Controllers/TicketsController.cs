@@ -40,8 +40,16 @@ namespace WebShopSpacesAPI.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<Ticket> Post([FromBody] Ticket ticket)
         {
+            try
+            {
+                return Ok(_ticketService.CreateNewTicket(ticket));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         // PUT api/values/5

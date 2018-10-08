@@ -38,7 +38,7 @@ namespace TicketShopApp.Core.ApplicationService.Service
                 throw new InvalidDataException("You need to choose to which planet");
             }
 
-            return null;
+            return _TicketRepository.CreateNewTicket(SpaceTicket) ;
         }
 
         public void DeleteTicket(int ID)

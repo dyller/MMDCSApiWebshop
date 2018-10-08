@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using SpaceTicket.Core.Entity;
 using TicketShopApp.Core.DomainService;
@@ -8,9 +9,14 @@ namespace Webshop.Infrastructure.FakeRepository
 {
     public class TicketRepository : ITicketRepository
     {
+        
+
         public Ticket CreateNewTicket(Ticket SpaceTicket)
         {
-            throw new NotImplementedException();
+            var fakeList = FAKEDB.ticket.ToList();
+            fakeList.Add(SpaceTicket);
+            FAKEDB.ticket = fakeList;
+           return SpaceTicket;
         }
 
         public void DeleteTicket(int ID)
@@ -20,20 +26,7 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public List<Ticket> ReadAllTicket()
         {
-            List<Ticket> testRead = new List<Ticket>();
-            testRead.Add(new Ticket()
-            {
-
-                Description = "hey",
-                Distance = 55,
-                HowManyTicket = 22,
-                planet = "mars",
-                Price = 55,
-                TicketId = 2,
-                TicketLeft = 1
-
-            });
-            return testRead;
+            return FAKEDB.ticket.ToList();
         }
 
         public Ticket ReadByID(int ID)

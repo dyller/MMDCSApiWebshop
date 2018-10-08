@@ -20,25 +20,31 @@ namespace WebShopSpacesAPI
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-
-            _env = env;
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
-            _conf = builder.Build();
-
+            _conf = configuration;
+            FAKEDB.InitData();
 
         }
-        public IHostingEnvironment _env { get; set; }
+        //public Startup(IHostingEnvironment env)
+        //{
+
+        //    _env = env;
+        //    var builder = new ConfigurationBuilder()
+        //        .SetBasePath(env.ContentRootPath)
+        //        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        //        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+        //        .AddEnvironmentVariables();
+        //    _conf = builder.Build();
+
+
+        //}
+        //public IHostingEnvironment _env { get; set; }
         public IConfiguration _conf { get; }
+
 
         public void ConfigureServices(IServiceCollection services)
         {
-            fakeDB fakeDB = new fakeDB();
             /*services.AddDbContext<CustomerAppContext>(
                 opt => opt.UseInMemoryDatabase("ThaDB")
                 );*/
@@ -80,7 +86,7 @@ namespace WebShopSpacesAPI
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
