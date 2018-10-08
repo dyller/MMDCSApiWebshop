@@ -4337,9 +4337,12 @@
       "SpaceTicket.Core.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
+<<<<<<< HEAD
         "dependencies": {
           "Microsoft.NETCore.App": "2.1.0"
         },
+=======
+>>>>>>> Jacob
         "compile": {
           "bin/placeholder/SpaceTicket.Core.Entity.dll": {}
         },
@@ -4351,7 +4354,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.NETCore.App": "2.1.0",
+=======
+>>>>>>> Jacob
           "SpaceTicket.Core.Entity": "1.0.0"
         },
         "compile": {

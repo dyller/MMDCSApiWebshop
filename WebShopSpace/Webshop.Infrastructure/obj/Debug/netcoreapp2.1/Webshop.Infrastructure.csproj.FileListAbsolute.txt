@@ -1,0 +1,14 @@
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.csprojAssemblyReference.cache
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.AssemblyInfo.cs
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\bin\Debug\netcoreapp2.1\Webshop.Infrastructure.deps.json
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\bin\Debug\netcoreapp2.1\Webshop.Infrastructure.dll
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\bin\Debug\netcoreapp2.1\Webshop.Infrastructure.pdb
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\bin\Debug\netcoreapp2.1\SpaceTicket.Core.Entity.dll
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\bin\Debug\netcoreapp2.1\TicketShopApp.Core.dll
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\bin\Debug\netcoreapp2.1\SpaceTicket.Core.Entity.pdb
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\bin\Debug\netcoreapp2.1\TicketShopApp.Core.pdb
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.csproj.CopyComplete
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.dll
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.pdb

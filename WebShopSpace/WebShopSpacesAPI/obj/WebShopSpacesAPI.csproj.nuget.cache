@@ -1,5 +1,9 @@
 {
   "version": 1,
+<<<<<<< HEAD
   "dgSpecHash": "BMxxGa0x2ut7G/urDvT0cSImlt2FfmxDMUloDIMj/H97TRHW46llQiCNiQg0uO7bPYxgmbC8mqrBGjopymHp0w==",
+=======
+  "dgSpecHash": "uAjmkUDBUaZ0wvzPHn3P1lpxt6zg8domdj1ruq8szeePLmCdH/cZXvwVm3WCinK0a0KS8JDdBqCtZ0yKMIZzjA==",
+>>>>>>> Jacob
   "success": true
 }
