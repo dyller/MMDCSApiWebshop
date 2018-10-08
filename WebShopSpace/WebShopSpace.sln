@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5F2D0D36-7343-46CA-BC44-1D27CEB1A139}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FF94088E-877E-4093-B41C-5AE5B092CB6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{3844C7FE-C42E-4A66-921A-8A8FF152C539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceTicket.Core.Entity", "SpaceTicket.Core.Entity\SpaceTicket.Core.Entity.csproj", "{5E425E47-C8E3-48A7-99CA-318C83D42336}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E425E47-C8E3-48A7-99CA-318C83D42336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E425E47-C8E3-48A7-99CA-318C83D42336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E425E47-C8E3-48A7-99CA-318C83D42336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E425E47-C8E3-48A7-99CA-318C83D42336}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E425E47-C8E3-48A7-99CA-318C83D42336} = {5F2D0D36-7343-46CA-BC44-1D27CEB1A139}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A0FAC98-2369-49FC-9097-12637FBCF01A}
+	EndGlobalSection
+EndGlobal
