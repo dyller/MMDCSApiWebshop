@@ -48,7 +48,7 @@ namespace TicketShopApp.Core.ApplicationService.Service
 
         public List<Ticket> ReadAllTicket()
         {
-            throw new NotImplementedException();
+            return _TicketRepository.ReadAllTicket();
         }
 
         public Ticket ReadByID(int ID)

@@ -20,7 +20,20 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public List<Ticket> ReadAllTicket()
         {
-            throw new NotImplementedException();
+            List<Ticket> testRead = new List<Ticket>();
+            testRead.Add(new Ticket()
+            {
+
+                Description = "hey",
+                Distance = 55,
+                HowManyTicket = 22,
+                planet = "mars",
+                Price = 55,
+                TicketId = 2,
+                TicketLeft = 1
+
+            });
+            return testRead;
         }
 
         public Ticket ReadByID(int ID)

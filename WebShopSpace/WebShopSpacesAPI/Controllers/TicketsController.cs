@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SpaceTicket.Core.Entity;
+using TicketShopApp.Core.ApplicationService;
 
 namespace WebShopSpacesAPI.Controllers
 {
@@ -10,11 +12,23 @@ namespace WebShopSpacesAPI.Controllers
     [ApiController]
     public class TicketsController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        private readonly ITicketService _ticketService;
+
+        public TicketsController(ITicketService ticketService)
         {
-            return new string[] { "value1", "value2" };
+            _ticketService = ticketService;
+        }
+        [HttpGet]
+        public ActionResult<IEnumerable<Ticket>> Get()
+        {
+            try
+            {
+                return Ok(_ticketService.ReadAllTicket());
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         // GET api/values/5
