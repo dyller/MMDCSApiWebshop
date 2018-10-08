@@ -5,7 +5,7 @@ using SpaceTicket.Core.Entity;
 
 namespace TicketShopApp.Core.ApplicationService
 {
-    interface ITicketService
+   public interface ITicketService
     {
         
         Ticket CreateNewTicket(Ticket SpaceTicket);

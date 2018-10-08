@@ -4337,9 +4337,6 @@
       "SpaceTicket.Core.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "Microsoft.NETCore.App": "2.1.0"
-        },
         "compile": {
           "bin/placeholder/SpaceTicket.Core.Entity.dll": {}
         },
@@ -4351,7 +4348,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Microsoft.NETCore.App": "2.1.0",
           "SpaceTicket.Core.Entity": "1.0.0"
         },
         "compile": {
@@ -4365,7 +4361,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Microsoft.NETCore.App": "2.1.0",
           "SpaceTicket.Core.Entity": "1.0.0",
           "TicketShopApp.Core": "1.0.0"
         },

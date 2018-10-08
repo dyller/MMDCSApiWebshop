@@ -1,14 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="ApplicationService\Service\" />
-    <Folder Include="DomainService\" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SpaceTicket.Core.Entity\SpaceTicket.Core.Entity.csproj" />

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Webshop.Infrastructure.FakeRepository
 {
-    class fakeDB
+   public class fakeDB
     {
     }
 }

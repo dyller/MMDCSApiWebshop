@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Webshop.Infrastructure/1.0.0": {
+        "dependencies": {
+          "SpaceTicket.Core.Entity": "1.0.0",
+          "TicketShopApp.Core": "1.0.0"
+        },
+        "runtime": {
+          "Webshop.Infrastructure.dll": {}
+        }
+      },
+      "SpaceTicket.Core.Entity/1.0.0": {
+        "runtime": {
+          "SpaceTicket.Core.Entity.dll": {}
+        }
+      },
+      "TicketShopApp.Core/1.0.0": {
+        "dependencies": {
+          "SpaceTicket.Core.Entity": "1.0.0"
+        },
+        "runtime": {
+          "TicketShopApp.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Webshop.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SpaceTicket.Core.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TicketShopApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

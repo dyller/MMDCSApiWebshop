@@ -36,8 +36,6 @@ namespace WebShopSpacesAPI
         public IHostingEnvironment _env { get; set; }
         public IConfiguration _conf { get; }
 
-        public IConfiguration Configuration { get; }
-
         public void ConfigureServices(IServiceCollection services)
         {
             fakeDB fakeDB = new fakeDB();

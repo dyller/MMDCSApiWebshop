@@ -1742,6 +1742,29 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "SpaceTicket.Core.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/SpaceTicket.Core.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpaceTicket.Core.Entity.dll": {}
+        }
+      },
+      "TicketShopApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "SpaceTicket.Core.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TicketShopApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TicketShopApp.Core.dll": {}
+        }
       }
     }
   },
@@ -5963,6 +5986,16 @@
         "xunit.runner.visualstudio.2.3.1.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "SpaceTicket.Core.Entity/1.0.0": {
+      "type": "project",
+      "path": "../SpaceTicket.Core.Entity/SpaceTicket.Core.Entity.csproj",
+      "msbuildProject": "../SpaceTicket.Core.Entity/SpaceTicket.Core.Entity.csproj"
+    },
+    "TicketShopApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../TicketShopApp.Core/TicketShopApp.Core.csproj",
+      "msbuildProject": "../TicketShopApp.Core/TicketShopApp.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5970,6 +6003,8 @@
       "Microsoft.NET.Test.Sdk >= 15.8.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "Moq >= 4.10.0",
+      "SpaceTicket.Core.Entity >= 1.0.0",
+      "TicketShopApp.Core >= 1.0.0",
       "xunit >= 2.3.1",
       "xunit.runner.visualstudio >= 2.3.1"
     ]
@@ -6003,7 +6038,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jacob\\Desktop\\study\\MMDCSApiWebshop\\WebShopSpace\\SpaceTicket.Core.Entity\\SpaceTicket.Core.Entity.csproj": {
+              "projectPath": "C:\\Users\\jacob\\Desktop\\study\\MMDCSApiWebshop\\WebShopSpace\\SpaceTicket.Core.Entity\\SpaceTicket.Core.Entity.csproj"
+            },
+            "C:\\Users\\jacob\\Desktop\\study\\MMDCSApiWebshop\\WebShopSpace\\TicketShopApp.Core\\TicketShopApp.Core.csproj": {
+              "projectPath": "C:\\Users\\jacob\\Desktop\\study\\MMDCSApiWebshop\\WebShopSpace\\TicketShopApp.Core\\TicketShopApp.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
