@@ -25,16 +25,8 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public void DeleteTicket(int ID)
         {
-            var fakeList = FAKEDB.ticket.ToList();
-            foreach (var item in FAKEDB.ticket)
-            {
-                if (item.TicketId == ID)
-                {
-                    fakeList.Remove(item);
-                    FAKEDB.ticket = fakeList;
-                    break;
-                }
-            }
+            var removed = _WSSC.Remove(new Ticket { TicketId = ID }).Entity;
+            _WSSC.SaveChanges();
 
         }
 
