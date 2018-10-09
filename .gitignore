@@ -1,5 +1,41 @@
+# Autosave files
+*~
 
-WebShopSpace/.vs/WebShopSpace/v15/Server/sqlite3/db.lock
-WebShopSpace/.vs/WebShopSpace/v15/Server/sqlite3/storage.ide
-WebShopSpace/.vs/WebShopSpace/v15/Server/sqlite3/storage.ide-wal
-WebShopSpace/.vs/WebShopSpace/v15/Server/sqlite3/storage.ide-shm
+# build
+[Oo]bj/
+[Bb]in/
+packages/
+TestResults/
+
+# globs
+Makefile.in
+*.DS_Store
+*.sln.cache
+*.suo
+*.cache
+*.pidb
+*.userprefs
+*.usertasks
+config.log
+config.make
+config.status
+aclocal.m4
+install-sh
+autom4te.cache/
+*.user
+*.tar.gz
+tarballs/
+test-results/
+Thumbs.db
+.vs/
+
+# Mac bundle stuff
+*.dmg
+*.app
+
+# resharper
+*_Resharper.*
+*.Resharper
+
+# dotCover
+*.dotCover
