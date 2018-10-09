@@ -50,8 +50,8 @@ namespace WebShopSpacesAPI
 
             if (_env.IsDevelopment())
             {
-                //services.AddDbContext<WebShopSpaceContext>(
-                //    opt => opt.UseSqlite("Data Source=customerApp.db"));
+                services.AddDbContext<WebShopSpaceContext>(
+                    opt => opt.UseSqlite("Data Source=customerApp.db"));
             }
             else if (_env.IsProduction())
             {

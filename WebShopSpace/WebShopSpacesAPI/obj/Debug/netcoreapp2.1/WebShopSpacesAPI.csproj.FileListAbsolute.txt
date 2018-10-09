@@ -19,4 +19,3 @@ C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\WebShopSpacesAPI\obj\D
 C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\WebShopSpacesAPI\obj\Debug\netcoreapp2.1\WebShopSpacesAPI.csproj.CopyComplete
 C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\WebShopSpacesAPI\obj\Debug\netcoreapp2.1\WebShopSpacesAPI.dll
 C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\WebShopSpacesAPI\obj\Debug\netcoreapp2.1\WebShopSpacesAPI.pdb
-C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\WebShopSpacesAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
