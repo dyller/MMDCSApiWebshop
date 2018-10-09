@@ -38,6 +38,10 @@ namespace TicketShopApp.Core.ApplicationService.Service
             {
                 throw new InvalidDataException("You need to choose to which planet");
             }
+            if (SpaceTicket.TravelDate == new DateTime())
+            {
+                throw new InvalidDataException("You need a travel date");
+            }
 
             return _TicketRepository.CreateNewTicket(SpaceTicket) ;
         }

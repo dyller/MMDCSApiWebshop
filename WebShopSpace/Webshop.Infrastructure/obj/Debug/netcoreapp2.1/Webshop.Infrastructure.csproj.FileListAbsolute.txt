@@ -12,3 +12,5 @@ C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure
 C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.csproj.CopyComplete
 C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.dll
 C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\obj\Debug\netcoreapp2.1\Webshop.Infrastructure.pdb
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\Webshop.Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml

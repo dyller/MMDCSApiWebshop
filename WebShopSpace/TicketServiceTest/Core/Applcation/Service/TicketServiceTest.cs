@@ -19,6 +19,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 0,
                 Description = "this is sparta",
                 Distance = 55,
@@ -33,6 +34,28 @@ namespace TicketServiceTest
         }
 
         [Fact]
+        public void NoTravelDateException()
+        {
+            var TicketRepo = new Mock<ITicketRepository>();
+            ITicketService service =
+                new TicketService(TicketRepo.Object);
+            Ticket ticket = new Ticket()
+            {
+                
+                Price = 110,
+                Description = "this is sparta",
+                Distance = 55,
+                HowManyTicket = 10,
+                planet = "mars",
+                TicketLeft = 3
+
+            };
+            Exception ex = Assert.Throws<InvalidDataException>(() =>
+                service.CreateNewTicket(ticket));
+            Assert.Equal("You need a travel date", ex.Message);
+        }
+
+        [Fact]
         public void PriceNullEception()
         {
             var TicketRepo = new Mock<ITicketRepository>();
@@ -40,6 +63,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Description = "this is sparta",
                 Distance = 55,
                 HowManyTicket = 10,
@@ -60,6 +84,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 100,
                 Distance = 55,
                 HowManyTicket = 10,
@@ -80,6 +105,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 10,
                 Description = "this is sparta",
                 HowManyTicket = 10,
@@ -101,6 +127,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 10,
                 Description = "this is sparta",
                 Distance = 55,
@@ -122,7 +149,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
-                
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 10,
                 Description = "this is sparta",
                 Distance = 55,
@@ -143,6 +170,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 planet = "Mars",
                 Price = 10,
                 Description = "this is sparta",
@@ -163,6 +191,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 0,
                 Description = "this is sparta",
                 Distance = 55,
@@ -184,6 +213,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Description = "this is sparta",
                 Distance = 55,
                 HowManyTicket = 10,
@@ -204,6 +234,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 100,
                 Distance = 55,
                 HowManyTicket = 10,
@@ -224,6 +255,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 10,
                 Description = "this is sparta",
                 HowManyTicket = 10,
@@ -245,6 +277,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 10,
                 Description = "this is sparta",
                 Distance = 55,
@@ -266,7 +299,7 @@ namespace TicketServiceTest
                 new TicketService(TicketRepo.Object);
             Ticket ticket = new Ticket()
             {
-
+                TravelDate = new DateTime(2011, 6, 10, 3, 5, 6),
                 Price = 10,
                 Description = "this is sparta",
                 Distance = 55,

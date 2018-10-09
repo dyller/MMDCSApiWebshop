@@ -9,14 +9,18 @@ namespace Webshop.Infrastructure.FakeRepository
 {
     public class TicketRepository : ITicketRepository
     {
+        readonly WebShopSpaceContext _WSSC;
 
+        public TicketRepository(WebShopSpaceContext WSSC)
+        {
+            _WSSC = WSSC;
+        }
 
         public Ticket CreateNewTicket(Ticket SpaceTicket)
         {
-            var fakeList = FAKEDB.ticket.ToList();
-            fakeList.Add(SpaceTicket);
-            FAKEDB.ticket = fakeList;
-            return SpaceTicket;
+            var ticket = _WSSC.Ticket.Add(SpaceTicket).Entity;
+            _WSSC.SaveChanges();
+            return ticket;
         }
 
         public void DeleteTicket(int ID)
@@ -36,7 +40,7 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public List<Ticket> ReadAllTicket()
         {
-            return FAKEDB.ticket.ToList();
+            return _WSSC.Ticket.ToList();
         }
 
         public Ticket ReadByID(int ID)
