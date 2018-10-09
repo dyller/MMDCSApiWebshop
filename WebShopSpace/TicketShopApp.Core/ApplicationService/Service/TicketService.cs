@@ -43,7 +43,7 @@ namespace TicketShopApp.Core.ApplicationService.Service
 
         public void DeleteTicket(int ID)
         {
-            throw new NotImplementedException();
+            _TicketRepository.DeleteTicket(ID);
         }
 
         public List<Ticket> ReadAllTicket()
@@ -53,7 +53,7 @@ namespace TicketShopApp.Core.ApplicationService.Service
 
         public Ticket ReadByID(int ID)
         {
-            throw new NotImplementedException();
+            return _TicketRepository.ReadByID(ID);
         }
 
         public Ticket UpdateTicket(Ticket UpdateTicket)

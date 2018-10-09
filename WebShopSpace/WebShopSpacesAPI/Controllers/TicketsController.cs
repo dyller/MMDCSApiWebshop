@@ -18,6 +18,7 @@ namespace WebShopSpacesAPI.Controllers
         {
             _ticketService = ticketService;
         }
+        //GET api/Tickets
         [HttpGet]
         public ActionResult<IEnumerable<Ticket>> Get()
         {
@@ -31,14 +32,16 @@ namespace WebShopSpacesAPI.Controllers
             }
         }
 
-        // GET api/values/5
+        // GET api/Tickets/5 -- READ By Id
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<Ticket> Get(int id)
         {
-            return "value";
+            if (id < 1) return BadRequest("Id must be greater then 0");
+
+            return Ok(_ticketService.ReadByID(id));
         }
 
-        // POST api/values
+        // POST api/Tickets
         [HttpPost]
         public ActionResult<Ticket> Post([FromBody] Ticket ticket)
         {
@@ -58,10 +61,20 @@ namespace WebShopSpacesAPI.Controllers
         {
         }
 
-        // DELETE api/values/5
+        // DELETE api/Tickets/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult<Ticket> Delete(int id)
         {
+            try
+            {
+                _ticketService.DeleteTicket(id);
+            return Ok($"Order with Id: {id} is Deleted");
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+            
         }
     }
 }

@@ -21,7 +21,17 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public void DeleteTicket(int ID)
         {
-            throw new NotImplementedException();
+            var fakeList = FAKEDB.ticket.ToList();
+            foreach (var item in FAKEDB.ticket)
+            {
+                if (item.TicketId == ID)
+                {
+                    fakeList.Remove(item);
+                    FAKEDB.ticket = fakeList;
+                    break;
+                }
+            }
+
         }
 
         public List<Ticket> ReadAllTicket()
@@ -31,7 +41,15 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public Ticket ReadByID(int ID)
         {
-            throw new NotImplementedException();
+            foreach (var item in FAKEDB.ticket)
+            {
+                if (item.TicketId == ID)
+                {
+                    return item;
+                }
+                
+            }
+            return null;
         }
 
         public Ticket UpdateTicket(Ticket UpdateTicket)
