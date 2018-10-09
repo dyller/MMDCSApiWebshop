@@ -87,7 +87,7 @@ namespace TicketShopApp.Core.ApplicationService.Service
             {
                 throw new InvalidDataException("Ticket number left need to be 0 or higher");
             }
-            return null;
+            return _TicketRepository.UpdateTicket(UpdateTicket);
         }
     }
 }
