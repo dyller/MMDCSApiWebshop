@@ -73,10 +73,19 @@ namespace WebShopSpacesAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    var ctx = scope.ServiceProvider.GetService<WebShopSpaceContext>();
+                    DBInit.SeedDB(ctx);
+                }
             }
             else
             {
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    var ctx = scope.ServiceProvider.GetService<WebShopSpaceContext>();
+                    ctx.Database.EnsureCreated();
+                }
                 app.UseHsts();
             }
 
