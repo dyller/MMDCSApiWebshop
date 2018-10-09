@@ -30,6 +30,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "2.1.4",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "2.1.4",
           "Microsoft.EntityFrameworkCore.Sqlite.Design": "1.1.6",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
           "SpaceTicket.Core.Entity": "1.0.0",
