@@ -49,10 +49,17 @@ namespace WebShopSpacesAPI
                 opt => opt.UseInMemoryDatabase("ThaDB")
                 );*/
 
-                // Azure SQL database:
-                services.AddDbContext<WebShopSpaceContext>(opt =>
-                opt.UseSqlServer(Configuration.GetConnectionString("SpaceShop")));
-          
+            if (_env.IsDevelopment())
+            {
+                
+            }
+            else if (_env.IsProduction())
+            {
+                services.AddDbContext<WebShopSpaceContext>(
+                    opt => opt
+                        .UseSqlServer(Configuration.GetConnectionString("SpaceShop")));
+            }
+
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
 
