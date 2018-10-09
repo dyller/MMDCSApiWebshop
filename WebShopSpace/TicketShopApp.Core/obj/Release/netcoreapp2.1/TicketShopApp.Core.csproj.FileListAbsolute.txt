@@ -1,0 +1,12 @@
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\bin\Release\netcoreapp2.1\TicketShopApp.Core.deps.json
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\bin\Release\netcoreapp2.1\TicketShopApp.Core.dll
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\bin\Release\netcoreapp2.1\TicketShopApp.Core.pdb
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\bin\Release\netcoreapp2.1\SpaceTicket.Core.Entity.dll
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\bin\Release\netcoreapp2.1\SpaceTicket.Core.Entity.pdb
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\obj\Release\netcoreapp2.1\TicketShopApp.Core.csprojAssemblyReference.cache
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\obj\Release\netcoreapp2.1\TicketShopApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\obj\Release\netcoreapp2.1\TicketShopApp.Core.AssemblyInfoInputs.cache
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\obj\Release\netcoreapp2.1\TicketShopApp.Core.AssemblyInfo.cs
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\obj\Release\netcoreapp2.1\TicketShopApp.Core.csproj.CopyComplete
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\obj\Release\netcoreapp2.1\TicketShopApp.Core.dll
+C:\Users\jacob\Desktop\study\MMDCSApiWebshop\WebShopSpace\TicketShopApp.Core\obj\Release\netcoreapp2.1\TicketShopApp.Core.pdb

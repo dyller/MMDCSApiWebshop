@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>bb94f9f4-152c-44a6-9fe9-563cd6fb9087</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpaceTicket.Core.Entity\SpaceTicket.Core.Entity.csproj" />
+    <ProjectReference Include="..\TicketShopApp.Core\TicketShopApp.Core.csproj" />
+    <ProjectReference Include="..\Webshop.Infrastructure\Webshop.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
