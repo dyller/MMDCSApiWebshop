@@ -8,10 +8,12 @@ namespace Webshop.Infrastructure.FakeRepository
     public static class FAKEDB
     {
         public static IEnumerable<Ticket> ticket;
+        public static IEnumerable<User> users;
 
         public static void InitData()
         {
             ticket = new List<Ticket>();
+            users = new List<User>();
         }
     }
 }

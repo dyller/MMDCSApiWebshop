@@ -9,14 +9,14 @@ namespace Webshop.Infrastructure.FakeRepository
 {
     public class TicketRepository : ITicketRepository
     {
-        
+
 
         public Ticket CreateNewTicket(Ticket SpaceTicket)
         {
             var fakeList = FAKEDB.ticket.ToList();
             fakeList.Add(SpaceTicket);
             FAKEDB.ticket = fakeList;
-           return SpaceTicket;
+            return SpaceTicket;
         }
 
         public void DeleteTicket(int ID)
@@ -47,7 +47,7 @@ namespace Webshop.Infrastructure.FakeRepository
                 {
                     return item;
                 }
-                
+
             }
             return null;
         }

@@ -64,8 +64,8 @@ namespace WebShopSpacesAPI
             services.AddScoped<ITicketRepository, TicketRepository>();
             services.AddScoped<ITicketService, TicketService>();
 
-            //services.AddScoped<IPetRepository1, SQLPetRepository>();
-            //services.AddScoped<IPetService, PetService>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
 
             services.AddMvc().AddJsonOptions(options => {
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;

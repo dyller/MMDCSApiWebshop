@@ -15,6 +15,7 @@ namespace TicketShopApp.Core.ApplicationService.Service
         {
             _TicketRepository = TicketRepository;
         }
+
         public Ticket CreateNewTicket(Ticket SpaceTicket)
         {
             if (SpaceTicket.Price <= 0)
