@@ -8,10 +8,10 @@ namespace Webshop.Infrastructure
 {
    public  class WebShopSpaceContext: DbContext
     {
-        public WebShopSpaceContext(DbContextOptions<WebShopSpaceContext> opt)
-            : base(opt) { }
-        
+        public WebShopSpaceContext(DbContextOptions<WebShopSpaceContext> opt) : base(opt)
+        {
 
+        }
         public DbSet<Ticket> Ticket { get; set; }
         public DbSet<User> Orders { get; set; }
     }

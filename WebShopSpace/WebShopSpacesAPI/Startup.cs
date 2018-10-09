@@ -22,7 +22,7 @@ namespace WebShopSpacesAPI
 {
     public class Startup
     {
-        private IConfiguration Configuration { get; }
+        private IConfiguration _conf { get; }
 
         private IHostingEnvironment _env { get; set; }
 
@@ -30,17 +30,16 @@ namespace WebShopSpacesAPI
         {
             _env = env;
             var builder = new ConfigurationBuilder()
-
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
-            Configuration = builder.Build();
+            _conf = builder.Build();
         }
 
 
         // This method gets called by the runtime. Use this method to add services to the container.
-     
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -51,13 +50,14 @@ namespace WebShopSpacesAPI
 
             if (_env.IsDevelopment())
             {
-                
+                //services.AddDbContext<WebShopSpaceContext>(
+                //    opt => opt.UseSqlite("Data Source=customerApp.db"));
             }
             else if (_env.IsProduction())
             {
                 services.AddDbContext<WebShopSpaceContext>(
                     opt => opt
-                        .UseSqlServer(Configuration.GetConnectionString("SpaceShop")));
+                        .UseSqlServer(_conf.GetConnectionString("defaultConnection")));
             }
 
             services.AddScoped<IUserRepository, UserRepository>();
@@ -98,6 +98,7 @@ namespace WebShopSpacesAPI
 
             //app.UseHttpsRedirection();
             app.UseMvc();
+            
         }
     }
 }
