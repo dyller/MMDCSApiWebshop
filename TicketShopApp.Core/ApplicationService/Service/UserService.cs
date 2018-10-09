@@ -50,7 +50,7 @@ namespace TicketShopApp.Core.ApplicationService.Service
 
         public User UpdateUser(User UpdateUser)
         {
-            throw new NotImplementedException();
+            return _UserRepository.UpdateUser(UpdateUser);
         }
     }
 }

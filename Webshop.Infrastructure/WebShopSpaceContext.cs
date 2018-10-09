@@ -13,7 +13,7 @@ namespace Webshop.Infrastructure
 
         }
         public DbSet<Ticket> Ticket { get; set; }
-        public DbSet<User> Orders { get; set; }
+        public DbSet<User> User { get; set; }
     }
 
 

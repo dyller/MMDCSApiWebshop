@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 using SpaceTicket.Core.Entity;
 using TicketShopApp.Core.DomainService;
 
@@ -9,39 +10,29 @@ namespace Webshop.Infrastructure.FakeRepository
 {
     public class UserRepository : IUserRepository
     {
+        readonly WebShopSpaceContext _WSSC;
+
+        public UserRepository(WebShopSpaceContext WSSC)
+        {
+            _WSSC = WSSC;
+        }
         public User CreateNewUser(User newUser)
         {
-            var fakeList = FAKEDB.users.ToList();
-            fakeList.Add(newUser);
-            FAKEDB.users = fakeList;
-            return newUser;
+            var user = _WSSC.User.Add(newUser).Entity;
+            _WSSC.SaveChanges();
+            return user;
         }
 
         public void DeleteUser(int UserId)
         {
-            var fakeList = FAKEDB.users.ToList();
-            foreach (var item in FAKEDB.users)
-            {
-                if (item.UserId == UserId)
-                {
-                    fakeList.Remove(item);
-                    FAKEDB.users = fakeList;
-                    break;
-                }
-            }
+            var removed = _WSSC.Remove(new User { UserId = UserId }).Entity;
+            _WSSC.SaveChanges();
         }
 
         public User FindUserByID(int ID)
         {
-            foreach (var item in FAKEDB.users)
-            {
-                if (item.UserId == ID)
-                {
-                    return item;
-                }
-
-            }
-            return null;
+            return _WSSC.User
+               .FirstOrDefault(o => o.UserId == ID);
         }
 
         public User FindUserByName(User user)
@@ -51,12 +42,15 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public List<User> ReadAllUser()
         {
-            return FAKEDB.users.ToList(); 
+            return _WSSC.User.ToList();
         }
 
         public User UpdateUser(User UpdateUser)
         {
-            throw new NotImplementedException();
+            _WSSC.Attach(UpdateUser).State = EntityState.Modified;
+            _WSSC.SaveChanges();
+
+            return UpdateUser;
         }
     }
 }

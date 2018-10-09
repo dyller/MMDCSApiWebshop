@@ -58,10 +58,16 @@ namespace WebShopSpacesAPI.Controllers
             }
         }
 
-        // PUT: api/Users/5
+        // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ActionResult<Ticket> Put(int id, [FromBody] User user)
         {
+            if (id < 1 || id != user.UserId)
+            {
+                return BadRequest("Parameter Id and order ID must be the same");
+            }
+
+            return Ok(_UserService.UpdateUser(user));
         }
 
         // DELETE: api/ApiWithActions/5
