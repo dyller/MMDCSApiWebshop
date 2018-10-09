@@ -51,7 +51,7 @@ namespace WebShopSpacesAPI
 
                 // Azure SQL database:
                 services.AddDbContext<WebShopSpaceContext>(opt =>
-                opt.UseSqlServer(Configuration.GetConnectionString("PetShop")));
+                opt.UseSqlServer(Configuration.GetConnectionString("SpaceShop")));
           
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
