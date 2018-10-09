@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 using SpaceTicket.Core.Entity;
 using TicketShopApp.Core.DomainService;
 
@@ -37,20 +38,16 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public Ticket ReadByID(int ID)
         {
-            foreach (var item in FAKEDB.ticket)
-            {
-                if (item.TicketId == ID)
-                {
-                    return item;
-                }
-
-            }
-            return null;
+            return _WSSC.Ticket
+                .FirstOrDefault(o => o.TicketId == ID);
         }
 
         public Ticket UpdateTicket(Ticket UpdateTicket)
         {
-            throw new NotImplementedException();
+            _WSSC.Attach(UpdateTicket).State = EntityState.Modified;
+            _WSSC.SaveChanges();
+
+            return UpdateTicket;
         }
     }
 }
