@@ -47,10 +47,10 @@ namespace WebShopSpacesAPI
             /*services.AddDbContext<CustomerAppContext>(
                 opt => opt.UseInMemoryDatabase("ThaDB")
                 );*/
-
+            services.AddCors();
             if (_env.IsDevelopment())
             {
-                services.AddDbContext<WebShopSpaceContext>(
+              services.AddDbContext<WebShopSpaceContext>(
                     opt => opt.UseSqlite("Data Source=customerApp.db"));
             }
             else if (_env.IsProduction())
@@ -96,7 +96,8 @@ namespace WebShopSpacesAPI
                 app.UseHsts();
             }
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseMvc();
             
         }
