@@ -14,7 +14,7 @@ namespace Webshop.Infrastructure
         }
         public DbSet<Ticket> Ticket { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<User> Kage { get; set; }
+        public DbSet<User> tryUsers { get; set; }
     }
 
 

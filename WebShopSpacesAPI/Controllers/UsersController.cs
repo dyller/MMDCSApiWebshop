@@ -36,7 +36,7 @@ namespace WebShopSpacesAPI.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public ActionResult<Ticket> Get(int id)
+        public ActionResult<User> Get(int id)
         {
             if (id < 1) return BadRequest("Id must be greater then 0");
 
@@ -46,7 +46,7 @@ namespace WebShopSpacesAPI.Controllers
 
         // POST: api/Users
         [HttpPost]
-        public ActionResult<Ticket> Post([FromBody] User user)
+        public ActionResult<User> Post([FromBody] User user)
         {
             try
             {
@@ -60,7 +60,7 @@ namespace WebShopSpacesAPI.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public ActionResult<Ticket> Put(int id, [FromBody] User user)
+        public ActionResult<User> Put(int id, [FromBody] User user)
         {
             if (id < 1 || id != user.UserId)
             {
@@ -72,7 +72,7 @@ namespace WebShopSpacesAPI.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public ActionResult<Ticket> Delete(int id)
+        public ActionResult<User> Delete(int id)
         {
             try
             {

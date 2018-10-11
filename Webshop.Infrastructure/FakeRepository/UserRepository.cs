@@ -42,7 +42,7 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public List<User> ReadAllUser()
         {
-            return _WSSC.Kage.ToList();
+            return _WSSC.Users.ToList();
         }
 
         public User UpdateUser(User UpdateUser)
