@@ -10,7 +10,7 @@ namespace TicketShopApp.Core.ApplicationService
         
         User CreateNewUser(User newUser);
         List<User> ReadAllUser();
-        User FindUserByName(User user);
+        User FindUserByName(String user);
         User FindUserByID(int ID);
         User UpdateUser(User UpdateUser);
         void DeleteUser(int UserId);

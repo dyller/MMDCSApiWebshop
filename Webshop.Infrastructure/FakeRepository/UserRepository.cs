@@ -35,9 +35,9 @@ namespace Webshop.Infrastructure.FakeRepository
                .FirstOrDefault(o => o.UserId == ID);
         }
 
-        public User FindUserByName(User user)
+        public User FindUserByName(String username)
         {
-            throw new NotImplementedException();
+            return _WSSC.Users.FirstOrDefault(o => o.Username ==username );
         }
 
         public List<User> ReadAllUser()
@@ -51,6 +51,11 @@ namespace Webshop.Infrastructure.FakeRepository
             _WSSC.SaveChanges();
 
             return UpdateUser;
+        }
+
+        public User UpdateUser(string UpdateUser)
+        {
+            throw new NotImplementedException();
         }
     }
 }

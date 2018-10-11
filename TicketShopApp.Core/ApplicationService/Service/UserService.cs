@@ -38,7 +38,7 @@ namespace TicketShopApp.Core.ApplicationService.Service
             return _UserRepository.FindUserByID(ID);
         }
 
-        public User FindUserByName(User user)
+        public User FindUserByName(String user)
         {
             throw new NotImplementedException();
         }

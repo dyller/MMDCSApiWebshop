@@ -11,8 +11,9 @@ namespace TicketShopApp.Core.DomainService
         User CreateNewUser(User newUser);
         List<User> ReadAllUser();
         User FindUserByID(int ID);
-        User FindUserByName(User user);
-        User UpdateUser(User UpdateUser);
+        User FindUserByName(String user);
+        User UpdateUser(String UpdateUser);
         void DeleteUser(int UserId);
+        User UpdateUser(User updateUser);
     }
 }
