@@ -18,7 +18,7 @@ namespace Webshop.Infrastructure.FakeRepository
         }
         public User CreateNewUser(User newUser)
         {
-            var user = _WSSC.User.Add(newUser).Entity;
+            var user = _WSSC.Users.Add(newUser).Entity;
             _WSSC.SaveChanges();
             return user;
         }
@@ -31,7 +31,7 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public User FindUserByID(int ID)
         {
-            return _WSSC.User
+            return _WSSC.Users
                .FirstOrDefault(o => o.UserId == ID);
         }
 
@@ -42,7 +42,7 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public List<User> ReadAllUser()
         {
-            return _WSSC.User.ToList();
+            return _WSSC.Kage.ToList();
         }
 
         public User UpdateUser(User UpdateUser)

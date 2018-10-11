@@ -44,7 +44,8 @@ namespace Webshop.Infrastructure.FakeRepository
 
         public Ticket UpdateTicket(Ticket UpdateTicket)
         {
-            _WSSC.Attach(UpdateTicket).State = EntityState.Modified;
+
+                _WSSC.Attach(UpdateTicket).State = EntityState.Modified;
             _WSSC.SaveChanges();
 
             return UpdateTicket;
