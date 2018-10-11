@@ -33,22 +33,16 @@ namespace WebShopSpacesAPI.Controllers
                 return BadRequest(e.Message);
             }
         }
+        
 
-        // GET: api/Users/5
-        [HttpGet("{username}")]
-        public ActionResult<User> Get(String username)
+        //GET: api/Users/5
+        [HttpGet("{id}")]
+        public ActionResult<User> Get(int id)
         {
-            return Ok(_UserService.FindUserByName(username));
+            if (id < 1) return BadRequest("Id must be greater then 0");
+
+            return Ok(_UserService.FindUserByID(id));
         }
-
-        // GET: api/Users/5
-        //[HttpGet("{id}")]
-        //public ActionResult<User> Get(int id)
-        //{
-        //    if (id < 1) return BadRequest("Id must be greater then 0");
-
-        //    return Ok(_UserService.FindUserByID(id));
-        //}
 
 
         // POST: api/Users
